@@ -1,0 +1,388 @@
+---
+title: "spotify"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+spotify_data <- read_csv("data.csv")
+```
+
+```{r}
+spotify_data
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2010,year<2019) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2000,year<2009) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1990,year<1999) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1980,year<1989) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1970,year<1979) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1960,year<1969) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1950,year<1959) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1940,year<1949) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1930,year<1939) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1920,year<1929) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2010,year<2019) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2000,year<2009) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1990,year<1999) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1980,year<1989) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1970,year<1979) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1960,year<1969) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1950,year<1959) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1940,year<1949) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1930,year<1939) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1920,year<1929) %>% 
+  ggplot() +
+    geom_point(aes(x= loudness,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2010,year<2019) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2000,year<2009) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1990,year<1999) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1980,year<1989) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1970,year<1979) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1960,year<1969) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1950,year<1959) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1940,year<1949) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1930,year<1939) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1920,year<1929) %>% 
+  ggplot() +
+    geom_point(aes(x= energy,y=popularity))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2010,year<2019) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>2000,year<2009) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1990,year<1999) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1980,year<1989) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1970,year<1979) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1960,year<1969) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+```{r}
+spotify_data %>% 
+  filter(year>1950,year<1959) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1940,year<1949) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1930,year<1939) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+
+```{r}
+spotify_data %>% 
+  filter(year>1920,year<1929) %>% 
+  ggplot() +
+    geom_point(aes(x= popularity,y=danceability))
+```
+
+```{r}
+
+decade_detect <- function(year) (floor(year/10)-191)
+
+spotify_data %>% 
+  mutate(decade=decade_detect(year)) %>% 
+  ggplot()+
+    geom_histogram(aes(x=energy)) +
+    facet_grid(. ~ decade)
+```
+
+```{r}
+
+decade_detect <- function(year) (floor(year/10)*10)
+
+spotify_data %>% 
+  mutate(decade=decade_detect(year)) %>% 
+  group_by(decade) %>% 
+  ggplot()+
+    geom_density(aes(x=energy)) +
+    facet_grid(. ~ decade)
+```
+
+```{r}
+library(plotly)
+```
+
+
+```{r}
+
+decade_detect <- function(year) (floor(year/10)*10)
+
+df <- spotify_data %>% 
+        mutate(decade=decade_detect(year))
+df1 <- density(df$energy)
+fig <- df %>%
+  plot_ly(
+    x = ~df1$x, y = ~df1$y, type = 'scatter', mode = 'lines',frame=decade
+  )
+fig <- fig %>% layout(
+    xaxis = list(
+    )
+  )
+
+fig
+
+```
+
+```{r}
+
+decade_detect <- function(year) (floor(year/10)*10)
+
+df <- spotify_data %>% 
+        mutate(decade=decade_detect(year))
+
+df %>% 
+  filter(decade==2000)
+
+x<- df %>% select(energy)
+
+density(density(x = x, na.rm = T, bw = 0.1, n = 20))
+
+```
+
+
